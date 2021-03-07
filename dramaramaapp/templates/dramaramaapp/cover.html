@@ -1,0 +1,70 @@
+{% load static %}
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>DramaRama</title>
+    <link rel="icon" href="{% static 'dramarama/images/favicon.ico' %}" type="image/x-icon"/>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+    <link href="{% static 'css/cover.css' %}" rel="stylesheet">
+
+  </head>
+
+  <body class="d-flex h-100 bg-app user-select-none"> <!---->
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="out-container mb-auto text-center pt-1 border-bottom">
+        <div>
+          <h2 class="title-app text-white float-md-start mb-0">DramaRama</h2>
+          <nav class="nav nav-masthead justify-content-center float-md-end pt-1" role="tablist">
+            <a class="nav-link active" id="home-tab" data-bs-toggle="tab" role="tab" aria-selected="true" aria-controls="home" href="#home">홈</a>
+            <a class="nav-link" id="intro-tab" data-bs-toggle="tab" role="tab" aria-controls="intro" aria-selected="false" href="#intro">소개</a>
+          </nav>
+        </div>
+      </header>
+
+      <main class="tab-content inner-container px-3 pt-0 mb-0 pb-0" id="nav-tabContent">
+          <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="row float-md-start mx-0 px-0">
+              <div class="img-col col px-0">
+                <img class="img-app" src="{% static 'images/dramarama-img1.png' %}">
+              </div>
+              <div class="col py-5">
+                <h1 class="home-desc-title">맞춤 분석 드라마 추천</h1>
+                <p class="lead mt-3">라마가 너에게 꼭 맞는 드라마를 추천해줄거야💜<br>나는 무슨 드라마 봐❔🤷‍♀️🤷‍♂️💭</p>
+                <!--mobile web image-->
+                <div class="img-app-m col p-0 m-0 text-center">
+                    <img class="img-app" src="{% static 'images/dramarama-img1.png' %}">
+                </div>
+                <!--            -->
+                <p class="lead lead-button btn-margin-m">
+                  <a href="{% url 'form' %}" class="btn btn-lg btn-secondary fw-bold border-white">나에게 맞는 드라마 찾으러 가기 →</a>
+                </p>
+                <p class="lead lead-button">
+                  <a href="{% url 'survey' %}" class="btn btn-lg btn-secondary fw-bold border-white">내 드라마 취향 공유하기 →</a>
+                </p>
+              </div>
+            </div>
+          </div> <!--end of TAP PANE HOME-->
+          <div class="tab-pane fade" id="intro" role="tabpanel" aria-labelledby="intro-tab">
+            드라마라마는 이렇게 만들어졌어요
+            모두가 만들어나가는 드라마라마
+          </div><!--end of TAP PANE INTRO-->
+      </main>
+
+      <footer class="out-container mt-auto text-center" style="text-shadow: none;">
+        <p>© 2021. DramaRama — <a href="https://github.com/mjkcool" target="_blank" class="text-white">mjkcool</a>
+      </footer>
+    </div>
+  </body>
+</html>

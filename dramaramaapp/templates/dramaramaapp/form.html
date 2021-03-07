@@ -1,0 +1,575 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.79.0">
+    <title>DramaRama</title>
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"/>
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
+    <!-- Bootstrap core JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/base.css' %}" rel="stylesheet">
+	<link href="{% static 'css/form.css' %}" rel="stylesheet">
+	<link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"/>
+
+</head>
+<body class="d-flex h-100 bg-app">
+	<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+		<form name="testForm" action="To.you--From.Rama💜" method="post">
+			<div class="out-container">
+				<div class="section my-5">
+					<h2 class="section-title text-white">너에 대해 알려줘!</h2>
+					<p class="section-text text-white">모든 항목에서 '현재'를 중심으로 응답해주십시오.</p>
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">나이</h4>
+							<p class="card-text">필수 입력 값이 아닙니다.</p>
+							<input id="age" class="form-control" aria-describedby="inputGroup-sizing-default" type="number" name="age" min="1" max="200">
+						  </div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">성별</h4>
+							<p class="card-text">필수 입력 값이 아닙니다.</p>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="gender" value="여자">
+								<label class="form-check-label">여자</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="gender" value="남자">
+								<label class="form-check-label">남자</label>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col">
+						<div class="card my-2">
+							<div class="card-body px-5 py-4">
+								<h4 class="card-title">성격</h4>
+								<p class="card-text">응답이 어렵다면 계속해서 읽어주십시오. 퇴근시간 지하철역에서 날 지나쳐 뛰어간 사람이 카드를 떨어트렸다.<br>
+									쫓아가 그 사람에게 건네줄 것인가(외향), 분실물 센터에 맡길 것인가(내향)?</p>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="personality" value="외향형" required>
+									<label class="form-check-label">외향형</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="personality" value="내향형" required>
+									<label class="form-check-label">내향형</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<div class="card my-2">
+							<div class="card-body px-5 py-4">
+								<h4 class="card-title">활동적인 편</h4>
+								<p class="card-text">응답이 어렵다면 계속해서 읽어주십시오. 응답이 어렵다면 계속해서 읽어주십시오. 자유로운 체육시간이 교실에서의 자율학습시간보다 좋다.</p>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="activity" value="예" required>
+									<label class="form-check-label">예</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="activity" value="예" required>
+									<label class="form-check-label">아니오</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<div class="card my-2">
+							<div class="card-body px-5 py-4">
+								<h4 class="card-title">직업</h4>
+								<p class="card-text">자신에게 가장 가깝다고 생각되는 항목을 선택하여 주십시오.</p>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="job" value="학생" required>
+									<label class="form-check-label">학생</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="job" value="사무직" required>
+									<label class="form-check-label">사무직</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="job" value="전문직" required>
+									<label class="form-check-label">전문직</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="job" value="교사" required>
+									<label class="form-check-label">교사</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="job" value="프리랜서" required>
+									<label class="form-check-label">프리랜서</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="job" value="전업주부" required>
+									<label class="form-check-label">전업주부</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="job" value="백수" required>
+									<label class="form-check-label">백수</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="job" value="군인" required>
+									<label class="form-check-label">군인</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="job" value="공무직" required>
+									<label class="form-check-label">공무직</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="job" value="개인사업자" required>
+									<label class="form-check-label">개인사업자</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="job" value="경영인" required>
+									<label class="form-check-label">경영인</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="job" value="자원봉사자" required>
+									<label class="form-check-label">자원봉사자</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="radio" class="form-check-input" name="job" value="아르바이트 직원" required>
+									<label class="form-check-label">아르바이트 직원</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<div class="card my-2">
+							<div class="card-body px-5 py-4">
+								<h4 class="card-title">관심사</h4>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="요리">
+									<label class="form-check-label">요리</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="스포츠">
+									<label class="form-check-label">스포츠</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="게임">
+									<label class="form-check-label">게임</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="인간관계">
+									<label class="form-check-label">인간관계</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="학업과 자기계발">
+									<label class="form-check-label">학업과 자기계발</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="본업">
+									<label class="form-check-label">본업</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="연애와 사랑">
+									<label class="form-check-label">연애와 사랑</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="종교와 운">
+									<label class="form-check-label">종교와 운</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="가족">
+									<label class="form-check-label">가족</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="음악과 노래">
+									<label class="form-check-label">음악과 노래</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="악기연주">
+									<label class="form-check-label">악기연주</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="영상콘텐츠(영화나 드라마, 유튜브 등)">
+									<label class="form-check-label">영상콘텐츠(영화나 드라마, 유튜브 등)</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="정치">
+									<label class="form-check-label">정치</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="공예">
+									<label class="form-check-label">공예</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="SNS">
+									<label class="form-check-label">SNS</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="건강과 위생">
+									<label class="form-check-label">건강과 위생</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="역사">
+									<label class="form-check-label">역사</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="연애">
+									<label class="form-check-label">연애</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="패션">
+									<label class="form-check-label">패션</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="부동산">
+									<label class="form-check-label">부동산</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="주식">
+									<label class="form-check-label">주식</label>
+								</div>
+								<div class="form-check form-check-inline">
+									<input type="checkbox" class="form-check-input" name="interested" value="오락(만화나 애니메이션)">
+									<label class="form-check-label">오락(만화나 애니메이션)</label>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">재학 여부</h4>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="school" value="예" required>
+								<label class="form-check-label">예</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="school" value="아니오" required>
+								<label class="form-check-label">아니오</label>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">재직 여부</h4>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="work" value="예" required>
+								<label class="form-check-label">예</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="work" value="아니오" required>
+								<label class="form-check-label">아니오</label>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">거주지</h4>
+							  <div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="abode" value="국내 수도권" required>
+								<label class="form-check-label">국내 수도권</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="abode" value="국내 지방" required>
+								<label class="form-check-label">국내 지방</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="abode" value="해외" required>
+								<label class="form-check-label">해외</label>
+							  </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">형제자매 수</h4>
+							<input class="form-control" type="number" name="siblings" min="0" max="200" required>
+						  </div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">가족 수</h4>
+							<input class="form-control" type="number" name="family" min="0" max="200" required>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">자취여부</h4>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="livealone" value="예" required>
+								<label class="form-check-label">예</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="livealone" value="아니오" required>
+								<label class="form-check-label">아니오</label>
+							</div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">전공계열</h4>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="major" value="이과" required>
+								<label class="form-check-label">이과</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="major" value="문과" required>
+								<label class="form-check-label">문과</label>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">경제상황</h4>
+							<p class="card-text">필수 입력 값이 아닙니다.</p>
+							  <div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="homeecomony" value="부족함">
+								<label class="form-check-label">부족함</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="homeecomony" value="넉넉함">
+								<label class="form-check-label">넉넉함</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="homeecomony" value="부유함">
+								<label class="form-check-label">부유함</label>
+							  </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">연애경험</h4>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="havedate" value="예" required>
+								<label class="form-check-label">있음</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="havedate" value="아니오" required>
+								<label class="form-check-label">없음</label>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">신체적인 문제로 힘들었던 경험</h4>
+							<p class="card-text">필수 입력 값이 아닙니다. 주관적인 판단으로 응답해 주세요.</p>
+							  <div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="physicaltrouble" value="예">
+								<label class="form-check-label">있음</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="physicaltrouble" value="아니오">
+								<label class="form-check-label">없음</label>
+							  </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">정신적인 문제로 힘들었던 경험</h4>
+							  <p class="card-text">필수 입력 값이 아닙니다. 주관적인 판단으로 응답해 주세요.</p>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="mentaltrouble" value="예">
+								<label class="form-check-label">있음</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="mentaltrouble" value="아니오">
+								<label class="form-check-label">없음</label>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section my-5">
+					<h2 class="section-title text-white">드라마 시청에 대한 질문</h2>
+					<p class="section-text text-white">모든 항목에서 '현재'를 중심으로 응답해주십시오.</p>
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">선호장르</h4>
+							  <div class="form-check form-check-inline">
+								<input type="checkbox" class="form-check-input" name="prefergenre" value="액션(하위 범죄)">
+								<label class="form-check-label">액션(하위 범죄)</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input type="checkbox" class="form-check-input" name="prefergenre" value="일상(하위 코미디)">
+								<label class="form-check-label">일상(하위 코미디)</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input type="checkbox" class="form-check-input" name="prefergenre" value="로맨스(하위 멜로)">
+								<label class="form-check-label">로맨스(하위 멜로)</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input type="checkbox" class="form-check-input" name="prefergenre" value="추리">
+								<label class="form-check-label">추리</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input type="checkbox" class="form-check-input" name="prefergenre" value="스릴러(하위 공포, 재난)">
+								<label class="form-check-label">스릴러(하위 공포, 재난)</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input type="checkbox" class="form-check-input" name="prefergenre" value="교육(하위 역사)">
+								<label class="form-check-label">교육(하위 역사)</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input type="checkbox" class="form-check-input" name="prefergenre" value="힐링(하위 다큐멘터리)">
+								<label class="form-check-label">힐링(하위 다큐멘터리)</label>
+							  </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">선호채널</h4>
+							  <p class="card-text">지상파 채널: KBS1, KBS2, MBC, SBS, EBS<br>케이블: 그 외 모든 채널</p>
+							  <div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="preferchannel" value="지상파" required>
+								<label class="form-check-label">지상파</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="preferchannel" value="케이블" required>
+								<label class="form-check-label">케이팝</label>
+							  </div>
+						  </div>
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">주 시청 시간</h4>
+							  <p class="card-text">낮과 밤 구분으로, 24시간이 자유로운 휴일에는 어느 시간 대 사이에 주로 시청하는지, 또는 어느 시간대에 시청하고 싶은가요?</p>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="watchingtime" value="6-18시" required>
+								<label class="form-check-label">6-18시</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="watchingtime" value="18-6시" required>
+								<label class="form-check-label">18-6시</label>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">드라마 주 시청 수단</h4>
+							  <div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="used" value="TV 또는 빔 프로젝터" required>
+								<label class="form-check-label">TV 또는 빔 프로젝터</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="used" value="컴퓨터(데스크탑)" required>
+								<label class="form-check-label">컴퓨터(데스크탑)</label>
+							  </div>
+							  <div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="used" value="휴대용 기기(노트북, 휴대폰 등)" required>
+								<label class="form-check-label">휴대용 기기(노트북, 휴대폰 등)</label>
+							  </div>
+						  </div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col">
+						<div class="card my-2">
+						  <div class="card-body px-5 py-4">
+							<h4 class="card-title">드라마 주 시청 방법</h4>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="way" value="본방송" required>
+								<label class="form-check-label">본방송</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="way" value="재방송" required>
+								<label class="form-check-label">재방송</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="way" value="다시보기 다운로드(유료 또는 무료)" required>
+								<label class="form-check-label">다시보기 다운로드(유료 또는 무료)</label>
+							</div>
+							<div class="form-check form-check-inline">
+								<input type="radio" class="form-check-input" name="way" value="다시보기, 연재작(온라인 콘텐츠 플랫폼 ex.NETFLIX, 왓챠)" required>
+								<label class="form-check-label">다시보기, 연재작(온라인 콘텐츠 플랫폼 ex.NETFLIX, 왓챠)</label>
+							</div>
+						  </div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<div class="text-center m-5">
+				<button type="submit" class="btn btn-lg btn-secondary fw-bold border-white">라마의 추천결과 보러가기 💌</button>
+			</div>
+		</form>
+		<footer class="out-container mt-auto text-center">
+        	<p>© 2021. DramaRama — <a href="https://github.com/mjkcool" target="_blank" class="text-white">mjkcool</a>
+      	</footer>
+	</div>
+</body>
+</html>

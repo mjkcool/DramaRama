@@ -1,0 +1,29 @@
+.card{
+    border-radius: 35px;
+    /*border: 1px solid rgba(119, 119, 119, 0.4);*/
+    filter: drop-shadow(0 .05rem .08rem rgba(0, 0, 0, .2));
+}
+.card-text{
+    font-size: 10pt;
+    color: #888888;
+}
+.card-title{
+    font-family: 'Cafe24Ssurround';
+    color: #a176ef;
+    /*text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);*/
+}
+
+
+input[type=text], input[type=number] {
+    width: 90px;
+}
+
+button{
+
+}
+
+@media (max-width: 768px) {
+    .out-container{
+      margin: 0;
+    }
+}

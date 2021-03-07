@@ -1,0 +1,12 @@
+*.pyc
+*~
+secrets.json
+__pycache__
+myvenv
+local_settings.py
+local_settin
+.DS_Store
+Procfile.txt
+runtime.txt
+requirements.txt
+data/
