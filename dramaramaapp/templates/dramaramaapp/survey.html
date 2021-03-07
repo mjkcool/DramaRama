@@ -7,7 +7,7 @@
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.79.0">
     <title>DramaRama</title>
-    <link rel="icon" href="{% static 'dramarama/images/favicon.ico' %}" type="image/x-icon"/>
+    <link rel="icon" href="{% static 'images/favicon.ico' %}" type="image/x-icon"/>
     <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/cover/">
     <!-- Bootstrap core JS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -80,25 +80,26 @@
 
 
 		$('#submit').click(function(){
-			let result = confirm('나의 드라마 취향을 전송할까요? 전송된 답변은 되돌릴 수 없어요. 아니오를 누르면 입력이 초기화됩니다.');
+			let result = confirm('나의 드라마 취향을 전송할까요? 전송된 답변은 되돌릴 수 없어요.');
 			if(result) {
-				var formData = {};
-				formData[item_name[0]] = $('input[name='+item_name[0]+']').val();
-				for(var i=1; i<=item_name.length; i++) {
+				let formData = {};
+				let age = $('input[name='+item_name[0]+']').val();
+				formData[item_name[0]] = age?Number(age):0;
+				for(let i=1; i<=item_name.length; i++) {
 					formData[item_name[i]]
 							= $('input[name='+item_name[i]+']').val()?$('input[name='+item_name[i]+']').val():"";
 				}
-				formData['first'] = $('#firstLink').attr('src')?$('#firstLink').attr('src'):"";
-				formData['second'] = $('#secondLink').attr('src')?$('#secondLink').attr('src'):"";
-				formData['third'] = $('#thirdLink').attr('src')?$('#thirdLink').attr('src'):"";
+				formData['first'] = document.getElementById("firstLink").src?document.getElementById("firstLink").src:"";
+				formData['second'] = document.getElementById("secondLink").src?document.getElementById("secondLink").src:"";
+				formData['third'] = document.getElementById("thirdLink").src?document.getElementById("thirdLink").src:"";
 				alert('답변을 전송했습니다! 감사합니다💜');
 				$.post(URL, formData);
+				location.href = window.location.origin;
 			}
-			location.href = window.location.origin;
 		});
 	});
 	</script>
-	<script src="{% static 'dramarama/js/survey.js' %}" type="javascript"></script>
+	<script src="{% static 'js/survey.js' %}" type="javascript"></script>
 	<style>
 		.text-shadow{
 			text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
