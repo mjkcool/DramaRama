@@ -10,3 +10,4 @@ Procfile.txt
 runtime.txt
 requirements.txt
 data/
+db.sqlite3
