@@ -10,7 +10,7 @@ Made by Python / Use Django, Pandas
 <p align="center">
 <img width="60%" src="https://user-images.githubusercontent.com/53461080/101436453-8582ad00-3951-11eb-8008-a64083801453.png" />
 <br><br>
-Form data
+drama data
 <img width="50%" src="https://user-images.githubusercontent.com/53461080/101436551-ba8eff80-3951-11eb-8be7-9b39278289b5.png" />
 </p>
 <br>
