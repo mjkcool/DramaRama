@@ -1,5 +1,7 @@
 # DramaRama web service
-Made by Python / Use Django, Pandas
+Made by Python / Use Django, Pandas  
+  
+✔*Ignored secret key and private data files.*
   
 
 ## Data preparation
